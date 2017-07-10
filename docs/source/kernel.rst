@@ -38,6 +38,7 @@ Linux内核使用指南
 	ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j8 #编译内核，生成zImage和dtb文件
 
 将SD卡分区，第一个分区格式化成为fat格式。将编译生成的内核复制到SD卡。
+	# -j8指定你的cpu核数×2，即我的cpu核数为4，可以提高编译速度，但也可不指定，那么就忍受漫长的等待吧
 
 .. sourcecode:: bash
 
